@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+:root{
+    --cor-do-fundo: #FFFFFF;
+    --cor-da-borda-vagas: #EAECF0;
+    --cor-do-texto-logo: #3A404E;
+    --cor-do-texto-menu: #667085;
+    --cor-botoes: #8E2424;
+    --cor-sobre-nos: #101828;
+    --cor-fundo-colaborador: rgba(195, 25, 25, 0.03);
+    --cor-do-rodape: #98A2B3;
+    --cor-campo-email-rodape: #D0D5DD;
+
+    --fonte-principal-menu: 'Inter', sans-serif;
+}
+
+body{
+    background: var(--cor-do-fundo);
+    font-family: var(--fonte-principal-menu);
+    font-weight: 500;
+    margin: 0 13.5vw 0 13.5vw;
+}
+
+.nome__empresa{
+    font-size: 18px;
+    color: var(--cor-do-texto-logo);
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    padding: 10px;
+}
+
+.menu__lista{
+    display: flex;
+    gap: 20px;
+}
+
+.menu__logo{
+    display: flex;
+    align-items: center;
+    column-gap: 10px
+}
+
+.menu__item a{
+    text-decoration: none;
+    color: var(--cor-do-texto-menu);
+    font-size: 16px;
+}
+
+.menu__botoes{
+    gap: 20px;
+}
+
+.botao__entrar, .botoa__cadastrar{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 18px;
+}
+
+.botao__entrar{
+    color: var(--cor-do-texto-menu);
+}
+
+.botoa__cadastrar{
+    color: var(--cor-do-fundo);
+    border: 1px solid var(--cor-botoes);
+    border-radius: 8px;
+    background-color: var(--cor-botoes);
+}
+
+.principal{
+    padding: 96px 0 96px 0;
+}
+
+.sobre__nos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 24px;
+    padding-bottom: 96px;
+}
+
+.texto__sobre{
+    color: var(--cor-botoes);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.texto__porque{
+    color: var(--cor-sobre-nos);
+    font-weight: 600;
+    font-size: 48px;
+}
+
+.texto__sobre__nos{
+    color: var(--cor-do-texto-menu);
+    font-size: 20px;
+    font-weight: 400;
+    width: 791px;
+    gap: 5px;
+}
+
+.metricas{
+    display: flex;
+    gap: 32px;
+    padding-bottom: 96px;
+}
+
+.metricas__numeros{
+    color: var(--cor-botoes);
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.metricas__titulo{
+    color: var(--cor-sobre-nos);
+    font-weight: 500;
+    font-size: 18px;
+    padding: 10px 0 10px 0;
+}
+
+.metricas__texto{
+    color: var(--cor-do-texto-menu);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.inicio__vaga{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 96px 0 96px 0;
+}
+
+.inicio__vaga__titulo{
+    color: var(--cor-botoes);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.inicio__vaga__subtitulo{
+    color: var(--cor-sobre-nos);
+    font-weight: 600;
+    font-size: 36px;
+    padding: 20px 0 20px 0;
+}
+
+.inicio__vaga__texto{
+    color: var(--cor-do-texto-menu);
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 64px;
+}
+
+.trabalho__imagem{
+    width: 1216px;
+    height: 400px;
+}
+
+
+.vaga__titulo{
+    color: var(--cor-sobre-nos);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 64px 0 32px 0; 
+}
+
+.vagas__lista{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 600px;
+}
+
+.vaga__item{
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    border: 1px solid var(--cor-da-borda-vagas);
+    background: var(--cor-do-fundo);
+    padding: 24px 24px 28px 24px;
+    gap: 32px;
+}
+
+.titulo__vaga{
+    color: var(--cor-sobre-nos);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.informacoes{
+    display: flex;
+    color: var(--cor-do-texto-menu);
+    font-size: 16px;
+    font-weight: 500;
+    gap: 24px;
+}
+
+.colaborador{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--cor-fundo-colaborador);
+    padding: 64px 64px;
+}
+
+.colaborador__titulo{
+    color: var(--cor-botoes);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.colaborador__subtitulo{
+    color: var(--cor-sobre-nos);
+    font-size: 36px;
+    font-weight: 500;
+    padding: 16px 0 32px 0;
+}
+
+.colaborador__imagem{
+    border-radius: 200px;
+    width: 56px;
+    height: 56px;
+}
+
+.colaborador__nome{
+    color: var(--cor-sobre-nos);
+    font-size: 16px;
+    font-weight: 500;
+    padding: 16px 0 4px 0;
+}
+
+.colaborador__setor{
+    color: var(--cor-do-texto-menu);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 96px 0 96px 0;
+}
+
+.rodape__titulo{
+    color: var(--cor-sobre-nos);
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.rodape__texto{
+    color: var(--cor-do-texto-menu);
+    font-size: 20px;
+    font-weight: 400;
+    padding: 20px 0 40px 0;
+}
+
+.email{
+    display: flex;
+    column-gap: 16px;
+    align-items: center;
+}
+
+.cadastrar__email{
+    border-radius: 8px;
+    border: 1px solid var(--cor-campo-email-rodape);
+    background: var(--cor-do-fundo);
+    width: 360px;
+    height: 48px;
+    padding: 12px 14px 12px 16px;
+}
+
+.rodape__direitos{
+    color: var(--cor-do-rodape);
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 32px;
+}
